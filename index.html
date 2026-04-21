@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Agrawal | Full-Stack Software Engineer</title>
+    <meta name="description" content="Full-Stack Software Engineer with experience at Deloitte building enterprise SAP systems, real-time multiplayer applications, and scalable full-stack products with React, Node.js, and Supabase.">
+    <meta property="og:title" content="Abhishek Agrawal | Full-Stack Software Engineer">
+    <meta property="og:description" content="Building real-time systems, scalable full-stack products, and enterprise workflow automation.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <!-- Preconnect to font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    
+    <!-- Vanilla Tilt -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-morphism">
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#timeline">Experience</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <p class="hero-greeting fade-in-up">Hi, I'm</p>
+            <h1 class="hero-title fade-in-up">Abhishek Agrawal</h1>
+            <div class="hero-typewriter fade-in-up">
+                <span class="typewriter-text"></span>
+            </div>
+            <p class="hero-subtitle fade-in-up">
+                Full-Stack Software Engineer · Real-Time Systems · AI + React + Node.js
+            </p>
+            <div class="hero-actions fade-in-up">
+                <a href="#contact" class="cta-button">Let's Connect</a>
+                <a href="resume.pdf" class="resume-button" download>Download Resume</a>
+            </div>
+            <p class="hero-location fade-in-up"><i class="fas fa-map-marker-alt"></i> Indore, Madhya Pradesh, India</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="section-subtitle">Bridging the gap between performance and aesthetics</p>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a software engineer with experience building <span class="about-highlight">enterprise workflow solutions at Deloitte</span> and developing full-stack products, real-time multiplayer systems, and scalable web applications.
+                    </p>
+                    <p>
+                        At Deloitte, I designed automated invoice approval logic for Vendor Invoice Management across <span class="about-highlight">25+ geographies</span>, supporting 90% automated processing, and built a custom SAP Fiori launchpad tile used by <span class="about-highlight">10,000+ users</span>.
+                    </p>
+                    <p>
+                        Outside of enterprise work, I build projects that push technical boundaries — from <span class="about-highlight">real-time multiplayer word games</span> with Web Worker trie scanning to <span class="about-highlight">full-stack e-commerce platforms</span> deployed on AWS. My stack: React, Node.js, Supabase, and cloud deployment platforms.
+                    </p>
+                </div>
+                <div class="about-image" aria-label="Code illustration">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <p class="section-subtitle">Tools and technologies I work with</p>
+            
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3><i class="fas fa-palette"></i> Frontend</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Vite</li>
+                        <li>Redux</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>REST APIs</li>
+                        <li>Supabase</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>SQLite</li>
+                        <li>MongoDB</li>
+                        <li>Sequelize</li>
+                        <li>Mongoose</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-cloud"></i> Cloud / Tools</h3>
+                    <ul>
+                        <li>AWS Elastic Beanstalk</li>
+                        <li>Vercel</li>
+                        <li>Render</li>
+                        <li>Git &amp; GitHub</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-brain"></i> Concepts</h3>
+                    <ul>
+                        <li>Real-Time Systems</li>
+                        <li>Web Workers</li>
+                        <li>Multiplayer Sync</li>
+                        <li>Trie Data Structures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <p class="section-subtitle">Real products, real deployments</p>
+            
+            <div class="projects-grid projects-case-study">
+
+                <!-- Word Wala -->
+                <div class="project-card">
+                    <a class="project-image" href="https://word-wala-game-f7yi.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Word Wala live demo">
+                        <i class="fas fa-gamepad"></i>
+                        <span class="project-image-overlay"><i class="fas fa-external-link-alt"></i> Live Demo</span>
+                    </a>
+                    <div class="project-content">
+                        <div class="project-header-row">
+                            <h3>Word Wala</h3>
+                            <span class="project-live-badge">Live on Vercel</span>
+                        </div>
+                        <p class="project-description">
+                            Real-time multiplayer word search game. Players join via shareable codes, scan a letter grid for hidden words in 8 directions, powered by a trie running in a Web Worker.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">Web Workers</span>
+                            <span class="tag">Vite</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Realtime Sync</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://word-wala-game-f7yi.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="https://github.com/Abhish0/Word-Wala-Game" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                        <div class="case-study">
+                            <div class="case-study-grid">
+                                <div class="case-study-block">
+                                    <h5><i class="fas fa-lightbulb"></i> The Problem</h5>
+                                    <p>Building a zero-lag multiplayer word game synchronized in real time across players, while offloading expensive 8-direction grid scanning off the main thread to keep the UI responsive.</p>
+                                </div>
+                                <div class="case-study-block">
+                                    <h5><i class="fas fa-sitemap"></i> Architecture</h5>
+                                    <ul>
+                                        <li>Supabase Realtime channels for live multiplayer sync</li>
+                                        <li>RLS policies scoping game state per room session</li>
+                                        <li>RPC functions for atomic server-side operations</li>
+                                        <li>Web Workers running trie scan off the main thread</li>
+                                        <li>Shareable join codes for room management</li>
+                                    </ul>
+                                </div>
+                                <div class="case-study-block">
+                                    <h5><i class="fas fa-puzzle-piece"></i> Challenges Solved</h5>
+                                    <ul>
+                                        <li>Race conditions in shared state &mdash; solved with Supabase RPC atomicity</li>
+                                        <li>UI jank during word scan &mdash; solved with Web Worker offloading</li>
+                                        <li>8-direction overlap detection &mdash; solved with trie + coordinate mapping</li>
+                                    </ul>
+                                </div>
+                                <div class="case-study-block">
+                                    <h5><i class="fas fa-graduation-cap"></i> What I Learned</h5>
+                                    <ul>
+                                        <li>Real-time synchronization tradeoffs at scale</li>
+                                        <li>Worker-based computation offloading patterns</li>
+                                        <li>Supabase Realtime subscription lifecycle management</li>
+                                        <li>Trie data structures for fast prefix-based word lookup</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartly -->
+                <div class="project-card">
+                    <a class="project-image" href="http://cartly-env.eba-rfxmimnw.ap-southeast-2.elasticbeanstalk.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Cartly live demo">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="project-image-overlay"><i class="fas fa-external-link-alt"></i> Live Demo</span>
+                    </a>
+                    <div class="project-content">
+                        <div class="project-header-row">
+                            <h3>Cartly</h3>
+                            <span class="project-live-badge">Live on AWS</span>
+                        </div>
+                        <p class="project-description">
+                            Full-stack e-commerce application with product browsing, cart management, checkout flow, and order tracking &mdash; deployed on AWS Elastic Beanstalk with a relational data model.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">Sequelize</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">AWS Elastic Beanstalk</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="http://cartly-env.eba-rfxmimnw.ap-southeast-2.elasticbeanstalk.com/" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="https://github.com/Abhish0/Cartly" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                        <div class="case-study">
+                            <div class="case-study-grid">
+                                <div class="case-study-block">
+                                    <h5><i class="fas fa-layer-group"></i> API Architecture</h5>
+                                    <ul>
+                                        <li>RESTful APIs for products, cart, orders, and users</li>
+                                        <li>Express.js middleware for authentication &amp; validation</li>
+                                        <li>Sequelize ORM with fully relational models</li>
+                                        <li>SQLite for lightweight persistent storage</li>
+                                    </ul>
+                                </div>
+                                <div class="case-study-block">
+                                    <h5><i class="fas fa-database"></i> Data Model</h5>
+                                    <ul>
+                                        <li>Users &harr; Orders (one-to-many)</li>
+                                        <li>Orders &harr; OrderItems &harr; Products (many-to-many)</li>
+                                        <li>Cart state persisted per user session</li>
+                                        <li>Relational integrity via Sequelize associations</li>
+                                    </ul>
+                                </div>
+                                <div class="case-study-block">
+                                    <h5><i class="fas fa-cloud-upload-alt"></i> Deployment Architecture</h5>
+                                    <ul>
+                                        <li>Frontend: React built and served via Express static</li>
+                                        <li>Backend: Node.js + Express on AWS Elastic Beanstalk</li>
+                                        <li>Database: SQLite bundled with the application</li>
+                                        <li>Region: ap-southeast-2 (Sydney)</li>
+                                    </ul>
+                                </div>
+                                <div class="case-study-block">
+                                    <h5><i class="fas fa-graduation-cap"></i> What I Learned</h5>
+                                    <ul>
+                                        <li>Deploying Node.js apps on AWS Elastic Beanstalk</li>
+                                        <li>Sequelize ORM associations and migration patterns</li>
+                                        <li>Full-stack checkout flow and order state management</li>
+                                        <li>Serving React SPA from Express in production</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline">
+        <div class="container">
+            <h2>Experience</h2>
+            <p class="section-subtitle">Career journey and key milestones</p>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Jul 2024 &ndash; Apr 2026</h4>
+                        <strong class="timeline-role">Software Engineer I &mdash; Deloitte</strong>
+                        <p>Hyderabad, India &middot; Enterprise workflow automation, SAP Fiori development, and invoice approval systems.</p>
+                        <ul class="timeline-highlights">
+                            <li>Designed automated invoice approval logic for Vendor Invoice Management across 25+ geographies</li>
+                            <li>Drove 90% automated processing through approval workflow automation</li>
+                            <li>Built custom SAP Fiori launchpad tile in JavaScript for 10,000+ users</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SAP Fiori</span>
+                            <span class="tag">SAP VIM</span>
+                            <span class="tag">Workflow Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2026</h4>
+                        <strong class="timeline-role">Word Wala &mdash; Real-Time Multiplayer Game</strong>
+                        <p>Built and shipped a real-time multiplayer word search game using React, Supabase Realtime, and Web Workers with trie-based grid scanning. Live on Vercel.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2026</h4>
+                        <strong class="timeline-role">Cartly &mdash; Full-Stack E-Commerce on AWS</strong>
+                        <p>Developed and deployed a full-stack shopping application with React, Node.js, Express, Sequelize, and AWS Elastic Beanstalk.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Earlier</h4>
+                        <strong class="timeline-role">IIT Madras &mdash; Foundation in Data Science</strong>
+                        <p>Completed coursework in Statistics, Python, Machine Learning, and Data Analysis through IIT Madras online program.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <div class="container">
+            <h2>Achievements</h2>
+            <p class="section-subtitle">Milestones that mark the journey</p>
+
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="achievement-body">
+                        <h3>200+ LeetCode Problems Solved</h3>
+                        <p>Consistent algorithmic problem solving across arrays, trees, graphs, dynamic programming, and system design patterns.</p>
+                        <a href="https://leetcode.com/u/abhishag123/" class="achievement-link" target="_blank" rel="noopener noreferrer">View LeetCode Profile &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="achievement-body">
+                        <h3>IIT Madras &mdash; Foundation in Data Science</h3>
+                        <p>Completed foundation-level coursework covering Statistics, Python programming, Machine Learning, and Data Analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2 class="contact-heading">Let's Connect</h2>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <p class="sr-only" aria-hidden="true"></p>
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder=" "
+                            required
+                        >
+                        <label for="name" class="form-label">Your Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder=" "
+                            required
+                        >
+                        <label for="email" class="form-label">Email Address</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder=" "
+                            required
+                        ></textarea>
+                        <label for="message" class="form-label">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                    <p class="contact-fallback">
+                        If the button does not open your mail app, use
+                        <a href="mailto:agrawalabhishek2020@gmail.com">agrawalabhishek2020@gmail.com</a>.
+                    </p>
+                </form>
+
+                <div class="form-success" id="formSuccess">
+                    <div class="success-message">
+                        <svg class="success-checkmark" viewBox="0 0 52 52">
+                            <circle cx="26" cy="26" r="25" fill="none" stroke="var(--color-accent-gold)" stroke-width="2"/>
+                            <polyline class="checkmark-svg" points="13.854 27.616 21.146 34.899 38.146 17.899" fill="none" stroke="var(--color-accent-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>Message Sent Successfully!</h3>
+                        <p class="success-subtext">Thank you for reaching out. I'll get back to you shortly.</p>
+                    </div>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://github.com/Abhish0" class="social-icon" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhishek-73468206/" class="social-icon" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/abhishag123/" class="social-icon" title="LeetCode" aria-label="LeetCode" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-code" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:agrawalabhishek2020@gmail.com" class="social-icon" title="Email" aria-label="Email">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="tel:+916263884703" class="social-icon" title="Phone" aria-label="Phone">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Abhishek Agrawal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
